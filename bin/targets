@@ -3,5 +3,5 @@
 find -L data/ \
 	-name "*.adj" \
 | sed \
-	-e 's#data/#results/grouped/#g' \
+	-e 's#data/#results/#g' \
 	-e 's#\.adj$#.sif#g'
