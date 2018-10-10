@@ -1,0 +1,7 @@
+#!/bin/bash
+
+find -L data/ \
+	-name "*.adj" \
+| sed \
+	-e 's#data/#results/grouped/#g' \
+	-e 's#\.adj$#.sif#g'
